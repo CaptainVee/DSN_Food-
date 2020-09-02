@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<p class="text-left">{{ file }} successfully uploaded.</p>
+<p class="text-right">{{ my_classes }}     Is contained in the food.</p>
+<div class="row">
+    <div class="col-md-5">
+        <div class="image-container">
+            <p class="text-center"><b>Detected Image</b></p>     
+            <a href="{{url_for('static', filename=pic)}}" target="_new"><img src="{{url_for('static', filename=pic)}}" class="upload-image-thumb"></a>
+        </div>
+        <div class="upload-form">
+            <p class="text-left"><b>Upload another?</b></p>
+            <form action = "/uploader" method = "POST" 
+                              enctype = "multipart/form-data">
+                <input type = "file" name = "file" />
+                <input type = "submit"/>
+            </form>
+        </div>      
+    </div>
+ </div>
+ <br>
+ <br>
+ <br>
+{% endblock %} 
+

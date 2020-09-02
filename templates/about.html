@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+
+	<h2>Oops</h2>
+	<p class="text-left">{{ file }} successfully uploaded.</p>
+	<p class="text-left"><strong>SORRY NO FOOD FROM OUR DATABASE WAS DETECTED.</strong> We are still working continously to improve the model. Thank you</p>
+ 	<br>
+	<div class="row">
+	    <div class="col-md-5">
+	        <div class="upload-form">
+	            <p class="text-left">Upload another?</p>
+	            <form action = "/uploader" method = "POST" 
+	                              enctype = "multipart/form-data">
+	                <input type = "file" name = "file" />
+	                <input type = "submit"/>
+	            </form>
+	        </div>      
+	    </div>
+	 </div>
+	<br>
+ 	<br>
+ 	<br>
+	<br>
+	<br>
+	<br>
+ 	<br>
+ 	<br>
+	<br>
+	<br>
+ 	<br>
+ 	<br>
+{% endblock %}

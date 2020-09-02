@@ -1,0 +1,53 @@
+/* 
+ * General
+ */
+
+
+
+body {
+  background-color: #d9dcdc;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+/* 
+ * Header
+ */
+
+header {
+  background-color: #a8adad;
+  padding: 25px 0;
+}
+
+.title {
+  float: left;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin: 0px 20px;
+}
+
+.title a, .title a:visited {
+  color: #ff6347;
+}
+
+.upload-image-thumb {
+  max-width: 500px;
+  margin: 80px;
+}
+.image-container {
+  margin: 0px auto;
+}
+ #footer { 
+  position: fixed; 
+  padding: 10px 10px 2px 10px; 
+  bottom: 0; 
+  font-size: 12px;
+  width: 100%; 
+  /* Height of the footer*/  
+  height: 90px; 
+  background: silver; 
+} 
